@@ -22,6 +22,7 @@ public class LoginTest {
 		driver.get("https://www.thrillophilia.com/consumers/sign_in");
 		driver.findElement(By.id("consumer_email")).sendKeys("trainer@Way2automation.com");
 		driver.findElement(By.id("consumer_password")).sendKeys("dsdsdsd");
+		driver.findElement(By.name("commit")).click();
 	}
 	
 	@AfterSuite
